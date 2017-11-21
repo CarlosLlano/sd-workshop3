@@ -110,7 +110,7 @@ El servicio a consultar en el navegador muestra el registro almacenado en la bas
     $con = new PDO('mysql:host=172.17.0.2;port=3306;dbname=database1;charset=utf8mb4', 'root', 'my-secret-pw');
     if (!$con)
     {
-      die('No se pudo establecer la coneccion');
+      die('No se pudo establecer la conexion');
     }
     foreach($con->query('SELECT * FROM WebServer') as $row) {
         echo "<h1>Solicitud atendida por <span class='color'>" . $row['name'] . "</span></h1>";
