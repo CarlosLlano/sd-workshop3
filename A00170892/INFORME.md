@@ -128,7 +128,7 @@ docker build -t mysql-db .
 docker run -d --name=mysql-db mysql-db
 ```
 
-Verificar servidor mysql
+Verificar servidor mysql accediendo al contenedor con "docker exec -it mysql-db bash"
 ```bash
 mysql -u root -pmy-secret-pw
 use database1;
